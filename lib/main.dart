@@ -142,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 200,
                             image: AssetImage(cardsItems[idx].imgUrl!)),
                         Text(cardsItems[idx].title!,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 fontSize: 28, fontWeight: FontWeight.bold)),
                         Text(
                           cardsItems[idx].description!,
@@ -156,9 +156,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
                     OutlinedButton(
-                        onPressed: _prevPage, child: Text('Prev page')),
+                        onPressed: _prevPage, child: const Text('Prev page')),
                     OutlinedButton(
-                        onPressed: _nextPage, child: Text('Next page'))
+                        onPressed: _nextPage, child: const Text('Next page'))
                   ],
                 )
               ],
